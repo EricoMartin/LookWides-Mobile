@@ -11,6 +11,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mobilefintech09.lookwides.orders.AllOrdersActivity;
+import com.mobilefintech09.lookwides.orders.CompletedOrdersActivity;
+import com.mobilefintech09.lookwides.orders.CurrentOrderActivity;
+import com.mobilefintech09.lookwides.orders.FAQActivity;
+import com.mobilefintech09.lookwides.price.PriceActivity;
+import com.mobilefintech09.lookwides.profile.ProfileActivity;
+
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
@@ -30,11 +37,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         this.mContext = context;
         mLayoutInflater = LayoutInflater.from(mContext);
     }
+    @Override
+    public int getItemViewType(final int position) {
+        return R.layout.item_list_orders;
+    }
+
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = mLayoutInflater.inflate(R.layout.item_list_orders, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);
         return new ViewHolder(view);
     }
 
@@ -45,22 +57,28 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.mTextView2.setText(txtList2.get(position));
         holder.mImageView.setTag(tagList.get(position));
         holder.mCurrentPosition = position;
+        holder.setIsRecyclable(false);
     }
 
     @Override
     public int getItemCount() {
-        return imageList.size();
+        return tagList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
 
-        public final ImageView mImageView;
-        public final TextView mTextView;
-        public final TextView mTextView2;
+    class ViewHolder extends RecyclerView.ViewHolder {
 
-        public int mCurrentPosition;
+        final ImageView mImageView;
+        final TextView mTextView;
+        final TextView mTextView2;
 
-        public ViewHolder(View view) {
+         int mCurrentPosition;
+
+         ViewHolder(View view) {
             super(view);
             mImageView = view.findViewById(R.id.img_item_orders);
             mTextView = view.findViewById(R.id.text_view_large);
@@ -87,14 +105,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                             intent.putExtra("Current Position: ", 3);
                             mContext.startActivity(intent);
                             break;
-                        case "Order Pricing":
+                        case "Our Prices":
                             intent = new Intent(mContext, PriceActivity.class);
                             intent.putExtra("Current Position: ", 4);
                             mContext.startActivity(intent);
                             break;
-                        case "profile":
+                        case "Profile":
                             intent = new Intent(mContext, ProfileActivity.class);
                             intent.putExtra("Current Position: ", 5);
+                            mContext.startActivity(intent);
+                            break;
+                        case "FAQ":
+                            intent = new Intent(mContext, FAQActivity.class);
+                            intent.putExtra("Current Position: ", 6);
                             mContext.startActivity(intent);
                             break;
 

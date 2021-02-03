@@ -27,4 +27,230 @@
     <string name="new_request">New request</string>
     <string name="welcome_to_lookwides_global_services">Welcome to LookWides Global Services</string>
     <string name="hi_user">Hi, User</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="register_date">Registration Date</string>
+    <string name="look_wides">LookWides</string>
+    <string name="look_wides2">LookWides 2</string>
+    <string name="profile">Profile</string>
+    <string name="contact">Contact</string>
+    <string name="num">1</string>
+    <string name="tranx_id">Transaction ID: AJ54243y12</string>
+    <string name="location">Location: Gaduwa</string>
+    <string name="destination">Destination: Garki II</string>
+    <string name="status">Status: In-Process</string>
+    <string name="status_complete">Status: Completed</string>
+    <string name="completed_orders">Completed Orders</string>
+    <string name="location_and_pricing">Location and Pricing</string>
+    <string name="location_galadimawa">Galadimawa</string>
+    <string name="price_1_000_naira">Price: 1,000 Naira</string>
+    <string name="order_description_label_text">Description</string>
+    <string name="order_description">Describe your Package</string>
+    <string name="location_label">Location</string>
+    <string name="destination_label">Destination</string>
+    <string name="weight_label">Weight</string>
+    <string name="item_label"> Number of Items</string>
+    <string name="items_label">Num of Items</string>
+    <string name="img_label">Image</string>
+    <string name="img_select">Upload Image</string>
+    <string name="order_process">Process Order</string>
+    <string name="order_pay">Pay</string>
+    <string name="price">Price</string>
+    <string name="order_status">Status</string>
+    <string name="logo_description">Lookwides App Logo</string>
+    <string name="card_number">Bank Card Number</string>
+    <string name="expiry">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="proceed">Proceed</string>
+    <string name="address">Address</string>
+    <string name="login">Login</string>
+    <string name="registration_successful">Registration Successful</string>
+
+    <!--Array of Locations and their prices-->
+
+    <string-array name="locations_array">
+        <item>Gudu</item>
+        <item>Lugbe</item>
+        <item>Kubwa</item>
+        <item>Life Camp/ Airport Junction</item>
+        <item>Area 1 - 11</item>
+        <item>Jabi</item>
+        <item>Lokogoma</item>
+        <item>Gwarimpa</item>
+        <item>Wuse all Zones</item>
+        <item>Utako</item>
+        <item>Gwagwalada</item>
+        <item>Dawaki</item>
+        <item>Dutse</item>
+        <item>Zuba</item>
+        <item>Tungan Maji</item>
+        <item>Maitama</item>
+        <item>Central Area</item>
+        <item>Durumi</item>
+        <item>Garki</item>
+        <item>Galadimawa</item>
+        <item>Games Village</item>
+        <item>Asokoro</item>
+        <item>Apo Resettlement</item>
+        <item>Nyanya</item>
+        <item>Mararaba</item>
+        <item>Airport Road</item>
+        <item>Nnamdi Azikiwe int. Airport</item>
+        <item>Mpape</item>
+        <item>Galadima Village</item>
+        <item>Kugbo</item>
+        <item>Dei dei</item>
+        <item>Kuje</item>
+        <item>Kurudu</item>
+        <item>Mabushi</item>
+        <item>Nicon Junction</item>
+        <item>Kabusa</item>
+        <item>Idu</item>
+        <item>Idu Industrial Area</item>
+        <item>Wuye</item>
+        <item>Kado</item>
+        <item>Karmo</item>
+        <item>Gwagwa</item>
+        <item>Jahi</item>
+        <item>Yangoji</item>
+        <item>Kwali</item>
+        <item>Abaji</item>
+        <item>Guzape</item>
+        <item>Katampe</item>
+        <item>Masaka</item>
+        <item>Gaduwa</item>
+        <item>Kaura</item>
+        <item>Karu</item>
+    </string-array>
+
+    <string-array name="prices_array">
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>700</item>
+        <item>700</item>
+        <item>600</item>
+        <item>700</item>
+        <item>1000</item>
+        <item>700</item>
+        <item>500</item>
+        <item>2000</item>
+        <item>1000</item>
+        <item>800</item>
+        <item>2400</item>
+        <item>2000</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>600</item>
+        <item>500</item>
+        <item>600</item>
+        <item>800</item>
+        <item>600</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1000</item>
+        <item>1700</item>
+        <item>1000</item>
+        <item>1200</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1700</item>
+        <item>2400</item>
+        <item>700</item>
+        <item>800</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1100</item>
+        <item>700</item>
+        <item>2300</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>800</item>
+        <item>800</item>
+        <item>1200</item>
+        <item>600</item>
+        <item>600</item>
+        <item>1000</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="reciever_name">Reciever Name</string>
+    <string name="reciever_phone">Reciever Phone</string>
+    <string name="recievers_address">Reciever Address</string>
+    <string name="successful">Successful</string>
+    <string name="image_placeholder">Image Placeholder</string>
+    <string name="cancel">Cancel</string>
+    <string name="complete_order">Complete Order</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="new_password">New Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="title_activity_f_a_q">FAQActivity</string>
+    <string name="large_text">
+        "Question: How do i make an Order?\n\n"
+
+        "Answer: To make an order click on the 'New Request' Button on the main application page and fill the required information\n\n"
+
+        "Question: How do i make a payment?\n\n"
+
+        "Answer: Payment is made immediately after an order is created and you will recieve a notification informing you of the payment details.\n\n"
+
+        "Question: How do i create an Account?\n\n"
+
+        "Answer: An account is automatically generated for you when you first sign up on the platform.\n\n"
+
+        "Question: How do i view my details?.\n\n"
+
+        "Answer: Click on the left menu button and a Navigation bar will be displayed. Click on profile to Go to profile page. You will see your profile details.\n\n"
+
+        "Question: How do i edit my profile details?.\n\n"
+
+        "Answer: Click on the right menu bar(three dots). Then click on settings and then click on profile to start editing your profile details\n\n"
+
+        "Question: How do i edit my profile picture?.\n\n"
+
+        "Answer: Click on the left menu button and a Navigation bar will be displayed. Click on profile to Go to profile page. Click on the button beside the image to select and upload an Image.\n\n"
+
+    </string>
+    <string name="withdrawal"> Question: How do i make a Withdrawal?</string>
+    <string name="transfers"> Question: How do i make a Transfer?</string>
+    <string name="accounts"> Question: How do i create an Account?</string>
+    <string name="details"> Question: How do i view my account details?</string>
+    <string name="pin_details"> Question: How do i view my account pin?</string>
+
+
+    <!--FAQ's Answers-->
+
+    <string name="withdrawal_ans"> Answer: Go to withdraw page from the home page and enter your account number, pin and click withdraw. If successful you will get a notification dialogue informing you of its success or otherwise.</string>
+    <string name="transfers_ans"> Answer: Go to transfer page from the home page and enter your account number, pin and click withdraw. If successful you will get a notification dialogue informing you of its success or otherwise.</string>
+    <string name="accounts_ans"> Answer: An account is automatically generated for you when you first sign up on the platform</string>
+    <string name="details_ans"> Answer: Go to profile page from the home page. You will see your account details.</string>
+    <string name="pin_details_ans">Answer: Go to profile page from the home page. You will see an "ON" button. Click on it to reveal your pin. Your pin should be kept securely from unauthorized persons.</string>
+    <string name="faq">FAQ</string>
+    <string name="_0">0</string>
+    <string name="complete">Complete</string>
+    <string name="no_uncompleted">No Uncompleted Orders</string>
+    <string name="error">\"Error: \"</string>
+    <string name="suite_d1_faplins_estate_mall_opposite_kabusa_garden_estate_galadimawa_abuja">Suite D1, Faplins Estate Mall, Opposite Kabusa Garden Estate, Galadimawa, Abuja.</string>
+
 </resources>

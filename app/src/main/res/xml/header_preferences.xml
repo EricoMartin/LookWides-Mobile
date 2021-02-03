@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:id="@+id/message_header"
+        app:fragment="com.mobilefintech09.lookwides.settings.SettingsActivity$MessagesFragment"
+        app:icon="@drawable/ic_person_black_24dp"
+        app:key="messages_header"
+        app:title="@string/profile" />
+
+    <Preference
+        android:id="@+id/sync_header"
+        app:fragment="com.mobilefintech09.lookwides.settings.SettingsActivity$SyncFragment"
+        app:icon="@drawable/sync"
+        app:key="sync_header"
+        app:title="@string/sync_header" />
+
+</PreferenceScreen>

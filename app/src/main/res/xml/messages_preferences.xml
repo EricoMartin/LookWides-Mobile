@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:defaultValue="Your Name"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:key="user_name"
+        android:summary="Edit Display Name"
+        app:title="@string/display_name"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        android:defaultValue="example@email.com"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:key="user_email"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Edit Email Address"
+        android:title="Email Address"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        android:defaultValue="080-XXXX-1234"
+        android:icon="@drawable/ic_phone_android_black_24dp"
+        android:key="user_phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Edit Phone Number"
+        android:title="Phone Number"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

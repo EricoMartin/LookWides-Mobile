@@ -4,29 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".profile.ProfileActivity">
     <RelativeLayout
         android:id="@+id/layover"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/grad">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/img_user"
+            android:layout_alignTop="@+id/img_user"
+            android:layout_alignEnd="@+id/img_user"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="-34dp"
+            android:backgroundTint="@color/colorAccent"
+            android:backgroundTintMode="src_over"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
         <RelativeLayout
             android:id="@+id/img_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/circle_border">
 
             <ImageView
+                android:id="@+id/image_avatar"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_margin="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/circle"
                 android:padding="5dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/lookwide_logo"/>
+                android:src="@drawable/lookwide_logo" />
+
         </RelativeLayout>
 
         <TextView
@@ -36,10 +57,10 @@
             android:layout_below="@+id/img_user"
             android:layout_centerHorizontal="true"
             android:textSize="26sp"
-            android:layout_margin="25dp"
+            android:layout_margin="15dp"
             android:textColor="@color/white"
             android:text="Lookwides Customer"/>
-        
+
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,21 +83,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="12sp"
                     android:text="Completed Orders"
                     android:textSize="22sp"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
                     android:layout_centerHorizontal= "true"/>
+
                 <TextView
+                    android:id="@+id/num_complete_orders"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4sp"
-                    android:text="32"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_centerHorizontal= "true"/>
+                    android:padding="4sp"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/new_style"
@@ -89,11 +111,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/username"
-                    android:textSize="22sp"
+                    android:textSize="16sp"
                     android:padding="16dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="0dp"/>
                 <TextView
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="John Doe"
@@ -102,45 +125,51 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/username"
-                    android:textSize="22sp"
+                    android:text="@string/email"
+                    android:textSize="16sp"
                     android:padding="16dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="0dp"/>
                 <TextView
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="John Doe"
+                    android:text="johndoe@example.com"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="08012345678"
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/username"
-                    android:textSize="22sp"
+                    android:text="@string/register_date"
+                    android:textSize="16sp"
                     android:padding="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="0dp"/>
+
                 <TextView
+                    android:id="@+id/date_registered"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="John Doe"
+                    android:layout_height="90dp"
                     android:paddingStart="16dp"
-                    android:paddingEnd="16dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/username"
-                    android:textSize="22sp"
-                    android:padding="16dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="0dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="John Doe"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"/>
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="30dp"
+                    android:text="10, October, 2018" />
             </LinearLayout>
         </RelativeLayout>
 

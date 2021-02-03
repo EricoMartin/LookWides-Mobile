@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.mobilefintech09.lookwides.auth.AuthActivity;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +19,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), AuthActivity.class));
                 finish();
             }
 
